@@ -82,7 +82,8 @@ https://cdn.jsdelivr.net/gh/ChenYFan-Tester/travis-ci-help-me-download@gh-pages/
 
 # Todo：
 
-- [ ] 编写GithubAction版本
+- [x] 编写GithubAction版本
+- [ ] 编写Coding版本
 
 # 关于
 
@@ -90,7 +91,11 @@ travis-ci集成部署，通过curl下载、tar打包、split切块、git部署�
 
 此脚本可以下载任意直链文件，包括但不限于Github，但是**请勿滥用**。
 
-同样支持GithubAction部署，原理类似，请自行更改
+感谢[Flexiston](https://github.com/Flexiston),同样支持GithubAction部署，原理类似，请自行更改。
+
+默认使用travis-ci部署，若用GithubAction请将workflew的yml中 `_master` 改为 `master`
+
+请注意下载完毕后将 `gh-pages` 分支及时删除!否则会产生比较大的commit影响Github!
 
 # 许可
 
